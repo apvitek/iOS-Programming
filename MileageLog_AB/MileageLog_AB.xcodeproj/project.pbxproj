@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CE974091A0872B800D3B5E5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE974081A0872B800D3B5E5 /* AboutViewController.swift */; };
+		9CE9740B1A0872DE00D3B5E5 /* TripListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9740A1A0872DE00D3B5E5 /* TripListTableViewController.swift */; };
+		9CE9740D1A0872FB00D3B5E5 /* TripListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9740C1A0872FB00D3B5E5 /* TripListTableViewCell.swift */; };
+		9CE9740F1A08733000D3B5E5 /* TripDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9740E1A08733000D3B5E5 /* TripDetailsTableViewController.swift */; };
+		9CE974111A08734F00D3B5E5 /* TripDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE974101A08734E00D3B5E5 /* TripDirectionsViewController.swift */; };
+		9CE974131A08737100D3B5E5 /* ReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE974121A08737100D3B5E5 /* ReportsTableViewController.swift */; };
+		9CE974151A08739100D3B5E5 /* ReportDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE974141A08739100D3B5E5 /* ReportDetailsViewController.swift */; };
+		9CE974171A0873AE00D3B5E5 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE974161A0873AE00D3B5E5 /* SettingsTableViewController.swift */; };
+		9CE974191A0873C800D3B5E5 /* StaticSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE974181A0873C800D3B5E5 /* StaticSettingsViewController.swift */; };
+		9CE9741B1A0873E200D3B5E5 /* AddressesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9741A1A0873E200D3B5E5 /* AddressesDetailsViewController.swift */; };
+		9CFD8F271A01C75800884207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD8F261A01C75800884207 /* AppDelegate.swift */; };
+		9CFD8F2C1A01C75800884207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD8F2A1A01C75800884207 /* Main.storyboard */; };
+		9CFD8F2E1A01C75800884207 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD8F2D1A01C75800884207 /* Images.xcassets */; };
+		9CFD8F311A01C75800884207 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD8F2F1A01C75800884207 /* LaunchScreen.xib */; };
+		9CFD8F3D1A01C75800884207 /* MileageLog_ABTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD8F3C1A01C75800884207 /* MileageLog_ABTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CFD8F371A01C75800884207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CFD8F191A01C75700884207 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFD8F201A01C75700884207;
+			remoteInfo = MileageLog_AB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CE974081A0872B800D3B5E5 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		9CE9740A1A0872DE00D3B5E5 /* TripListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripListTableViewController.swift; sourceTree = "<group>"; };
+		9CE9740C1A0872FB00D3B5E5 /* TripListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripListTableViewCell.swift; sourceTree = "<group>"; };
+		9CE9740E1A08733000D3B5E5 /* TripDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDetailsTableViewController.swift; sourceTree = "<group>"; };
+		9CE974101A08734E00D3B5E5 /* TripDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDirectionsViewController.swift; sourceTree = "<group>"; };
+		9CE974121A08737100D3B5E5 /* ReportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsTableViewController.swift; sourceTree = "<group>"; };
+		9CE974141A08739100D3B5E5 /* ReportDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportDetailsViewController.swift; sourceTree = "<group>"; };
+		9CE974161A0873AE00D3B5E5 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		9CE974181A0873C800D3B5E5 /* StaticSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticSettingsViewController.swift; sourceTree = "<group>"; };
+		9CE9741A1A0873E200D3B5E5 /* AddressesDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressesDetailsViewController.swift; sourceTree = "<group>"; };
+		9CFD8F211A01C75700884207 /* MileageLog_AB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MileageLog_AB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFD8F251A01C75800884207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFD8F261A01C75800884207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CFD8F2B1A01C75800884207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CFD8F2D1A01C75800884207 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9CFD8F301A01C75800884207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9CFD8F361A01C75800884207 /* MileageLog_ABTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MileageLog_ABTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFD8F3B1A01C75800884207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFD8F3C1A01C75800884207 /* MileageLog_ABTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageLog_ABTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CFD8F1E1A01C75700884207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFD8F331A01C75800884207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CFD8F181A01C75700884207 = {
+			isa = PBXGroup;
+			children = (
+				9CFD8F231A01C75800884207 /* MileageLog_AB */,
+				9CFD8F391A01C75800884207 /* MileageLog_ABTests */,
+				9CFD8F221A01C75700884207 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CFD8F221A01C75700884207 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CFD8F211A01C75700884207 /* MileageLog_AB.app */,
+				9CFD8F361A01C75800884207 /* MileageLog_ABTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CFD8F231A01C75800884207 /* MileageLog_AB */ = {
+			isa = PBXGroup;
+			children = (
+				9CFD8F261A01C75800884207 /* AppDelegate.swift */,
+				9CFD8F2A1A01C75800884207 /* Main.storyboard */,
+				9CE9741A1A0873E200D3B5E5 /* AddressesDetailsViewController.swift */,
+				9CE974161A0873AE00D3B5E5 /* SettingsTableViewController.swift */,
+				9CE974181A0873C800D3B5E5 /* StaticSettingsViewController.swift */,
+				9CE974141A08739100D3B5E5 /* ReportDetailsViewController.swift */,
+				9CE974121A08737100D3B5E5 /* ReportsTableViewController.swift */,
+				9CE974101A08734E00D3B5E5 /* TripDirectionsViewController.swift */,
+				9CE9740C1A0872FB00D3B5E5 /* TripListTableViewCell.swift */,
+				9CE9740E1A08733000D3B5E5 /* TripDetailsTableViewController.swift */,
+				9CE9740A1A0872DE00D3B5E5 /* TripListTableViewController.swift */,
+				9CE974081A0872B800D3B5E5 /* AboutViewController.swift */,
+				9CFD8F2D1A01C75800884207 /* Images.xcassets */,
+				9CFD8F2F1A01C75800884207 /* LaunchScreen.xib */,
+				9CFD8F241A01C75800884207 /* Supporting Files */,
+			);
+			path = MileageLog_AB;
+			sourceTree = "<group>";
+		};
+		9CFD8F241A01C75800884207 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CFD8F251A01C75800884207 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CFD8F391A01C75800884207 /* MileageLog_ABTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CFD8F3C1A01C75800884207 /* MileageLog_ABTests.swift */,
+				9CFD8F3A1A01C75800884207 /* Supporting Files */,
+			);
+			path = MileageLog_ABTests;
+			sourceTree = "<group>";
+		};
+		9CFD8F3A1A01C75800884207 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CFD8F3B1A01C75800884207 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CFD8F201A01C75700884207 /* MileageLog_AB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CFD8F401A01C75800884207 /* Build configuration list for PBXNativeTarget "MileageLog_AB" */;
+			buildPhases = (
+				9CFD8F1D1A01C75700884207 /* Sources */,
+				9CFD8F1E1A01C75700884207 /* Frameworks */,
+				9CFD8F1F1A01C75700884207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MileageLog_AB;
+			productName = MileageLog_AB;
+			productReference = 9CFD8F211A01C75700884207 /* MileageLog_AB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CFD8F351A01C75800884207 /* MileageLog_ABTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CFD8F431A01C75800884207 /* Build configuration list for PBXNativeTarget "MileageLog_ABTests" */;
+			buildPhases = (
+				9CFD8F321A01C75800884207 /* Sources */,
+				9CFD8F331A01C75800884207 /* Frameworks */,
+				9CFD8F341A01C75800884207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CFD8F381A01C75800884207 /* PBXTargetDependency */,
+			);
+			name = MileageLog_ABTests;
+			productName = MileageLog_ABTests;
+			productReference = 9CFD8F361A01C75800884207 /* MileageLog_ABTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CFD8F191A01C75700884207 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Developers Guild";
+				TargetAttributes = {
+					9CFD8F201A01C75700884207 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					9CFD8F351A01C75800884207 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9CFD8F201A01C75700884207;
+					};
+				};
+			};
+			buildConfigurationList = 9CFD8F1C1A01C75700884207 /* Build configuration list for PBXProject "MileageLog_AB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CFD8F181A01C75700884207;
+			productRefGroup = 9CFD8F221A01C75700884207 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CFD8F201A01C75700884207 /* MileageLog_AB */,
+				9CFD8F351A01C75800884207 /* MileageLog_ABTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CFD8F1F1A01C75700884207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFD8F2C1A01C75800884207 /* Main.storyboard in Resources */,
+				9CFD8F311A01C75800884207 /* LaunchScreen.xib in Resources */,
+				9CFD8F2E1A01C75800884207 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFD8F341A01C75800884207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CFD8F1D1A01C75700884207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE974151A08739100D3B5E5 /* ReportDetailsViewController.swift in Sources */,
+				9CE974091A0872B800D3B5E5 /* AboutViewController.swift in Sources */,
+				9CE9741B1A0873E200D3B5E5 /* AddressesDetailsViewController.swift in Sources */,
+				9CE9740F1A08733000D3B5E5 /* TripDetailsTableViewController.swift in Sources */,
+				9CE974191A0873C800D3B5E5 /* StaticSettingsViewController.swift in Sources */,
+				9CE974131A08737100D3B5E5 /* ReportsTableViewController.swift in Sources */,
+				9CE9740B1A0872DE00D3B5E5 /* TripListTableViewController.swift in Sources */,
+				9CE974171A0873AE00D3B5E5 /* SettingsTableViewController.swift in Sources */,
+				9CFD8F271A01C75800884207 /* AppDelegate.swift in Sources */,
+				9CE974111A08734F00D3B5E5 /* TripDirectionsViewController.swift in Sources */,
+				9CE9740D1A0872FB00D3B5E5 /* TripListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFD8F321A01C75800884207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFD8F3D1A01C75800884207 /* MileageLog_ABTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CFD8F381A01C75800884207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFD8F201A01C75700884207 /* MileageLog_AB */;
+			targetProxy = 9CFD8F371A01C75800884207 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CFD8F2A1A01C75800884207 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CFD8F2B1A01C75800884207 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CFD8F2F1A01C75800884207 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CFD8F301A01C75800884207 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CFD8F3E1A01C75800884207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CFD8F3F1A01C75800884207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CFD8F411A01C75800884207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MileageLog_AB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CFD8F421A01C75800884207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MileageLog_AB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CFD8F441A01C75800884207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MileageLog_ABTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MileageLog_AB.app/MileageLog_AB";
+			};
+			name = Debug;
+		};
+		9CFD8F451A01C75800884207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MileageLog_ABTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MileageLog_AB.app/MileageLog_AB";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CFD8F1C1A01C75700884207 /* Build configuration list for PBXProject "MileageLog_AB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CFD8F3E1A01C75800884207 /* Debug */,
+				9CFD8F3F1A01C75800884207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CFD8F401A01C75800884207 /* Build configuration list for PBXNativeTarget "MileageLog_AB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CFD8F411A01C75800884207 /* Debug */,
+				9CFD8F421A01C75800884207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CFD8F431A01C75800884207 /* Build configuration list for PBXNativeTarget "MileageLog_ABTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CFD8F441A01C75800884207 /* Debug */,
+				9CFD8F451A01C75800884207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CFD8F191A01C75700884207 /* Project object */;
+}

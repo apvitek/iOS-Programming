@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="13g-wz-5Ka">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurants-->
+        <scene sceneID="YsR-yh-nbU">
+            <objects>
+                <tableViewController id="gbZ-IF-FWx" customClass="RestaurantsListTableViewController" customModule="RestaurantsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JiJ-tg-mg4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Default Cell" id="fF7-ze-6IU">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fF7-ze-6IU" id="XsJ-FB-sOl">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Rff-yX-ue3" kind="show" identifier="showOnMap" id="3oT-r6-o6p"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gbZ-IF-FWx" id="rWR-pB-1um"/>
+                            <outlet property="delegate" destination="gbZ-IF-FWx" id="QQw-yx-uWF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Restaurants" id="0e7-8g-fJq">
+                        <barButtonItem key="rightBarButtonItem" title="Show all" id="LP4-7j-7JQ">
+                            <connections>
+                                <segue destination="Rff-yX-ue3" kind="show" identifier="showAll" id="7fo-vA-w6W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbR-Wl-wjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="392"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="amx-ET-QOF">
+            <objects>
+                <viewController id="Rff-yX-ue3" customClass="MapViewController" customModule="RestaurantsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DRQ-6G-tmx"/>
+                        <viewControllerLayoutGuide type="bottom" id="esd-6v-Cok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aW9-4s-Ncb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68s-Bx-fV9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KX-hk-Ko3">
+                                <rect key="frame" x="16" y="540" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8KX-hk-Ko3" secondAttribute="height" multiplier="1:1" id="Gcj-0U-zJp"/>
+                                    <constraint firstAttribute="width" constant="40" id="jox-9h-bjH"/>
+                                </constraints>
+                                <state key="normal" image="locate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="centerOnUserLocationButtonPressed:" destination="Rff-yX-ue3" eventType="touchUpInside" id="8Rn-6j-K0S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghu-U0-FAz">
+                                <rect key="frame" x="217" y="550" width="166" height="30"/>
+                                <state key="normal" title="Redo search in this area">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="redoSearchButtonPressed:" destination="Rff-yX-ue3" eventType="touchUpInside" id="LTT-01-SWb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="68s-Bx-fV9" secondAttribute="trailing" id="4dU-pC-AXj"/>
+                            <constraint firstItem="ghu-U0-FAz" firstAttribute="bottom" secondItem="8KX-hk-Ko3" secondAttribute="bottom" id="5de-U5-8dk"/>
+                            <constraint firstItem="8KX-hk-Ko3" firstAttribute="top" secondItem="68s-Bx-fV9" secondAttribute="bottom" constant="-60" id="5fT-N9-imJ"/>
+                            <constraint firstItem="ghu-U0-FAz" firstAttribute="centerX" secondItem="68s-Bx-fV9" secondAttribute="centerX" id="eyU-8i-fON"/>
+                            <constraint firstItem="68s-Bx-fV9" firstAttribute="top" secondItem="aW9-4s-Ncb" secondAttribute="top" id="kLq-kT-VVq"/>
+                            <constraint firstItem="68s-Bx-fV9" firstAttribute="leading" secondItem="aW9-4s-Ncb" secondAttribute="leading" id="nuk-ge-VLz"/>
+                            <constraint firstItem="68s-Bx-fV9" firstAttribute="bottom" secondItem="esd-6v-Cok" secondAttribute="top" id="re2-px-HPb"/>
+                            <constraint firstItem="68s-Bx-fV9" firstAttribute="leading" secondItem="8KX-hk-Ko3" secondAttribute="trailing" constant="-56" id="zbi-Ik-sAd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="68s-Bx-fV9" id="oDM-jm-LNY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWO-To-wyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="392"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DoA-KC-afP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="13g-wz-5Ka" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zuf-pI-Zyg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gbZ-IF-FWx" kind="relationship" relationship="rootViewController" id="awR-IF-YOx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6j-ct-c2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="392"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="locate" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="7fo-vA-w6W"/>
+    </inferredMetricsTieBreakers>
+</document>

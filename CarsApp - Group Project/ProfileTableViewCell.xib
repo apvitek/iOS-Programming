@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="90" id="KGk-i7-Jjw" customClass="ProfileTableViewCell" customModule="CarsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sfG-I8-EhI">
+                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="xns-Qe-2Cf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klq-Ec-lJH">
+                        <rect key="frame" x="60" y="8" width="304" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sfG-I8-EhI" firstAttribute="bottom" secondItem="Klq-Ec-lJH" secondAttribute="bottom" id="8nw-he-SLp"/>
+                    <constraint firstItem="sfG-I8-EhI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Afc-qi-r3a"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sfG-I8-EhI" secondAttribute="bottom" constant="-0.5" id="Ej3-9D-7T1"/>
+                    <constraint firstItem="Klq-Ec-lJH" firstAttribute="leading" secondItem="sfG-I8-EhI" secondAttribute="trailing" constant="8" symbolic="YES" id="g6v-ae-8tY"/>
+                    <constraint firstItem="Klq-Ec-lJH" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="hP6-cf-RUZ"/>
+                    <constraint firstItem="sfG-I8-EhI" firstAttribute="top" secondItem="Klq-Ec-lJH" secondAttribute="top" id="kIU-9f-sDs"/>
+                    <constraint firstItem="sfG-I8-EhI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ta2-9X-IGE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="profileImageView" destination="sfG-I8-EhI" id="l7q-82-d7B"/>
+                <outlet property="profileLabel" destination="Klq-Ec-lJH" id="1Cn-R6-8Dq"/>
+            </connections>
+            <point key="canvasLocation" x="439" y="315"/>
+        </tableViewCell>
+    </objects>
+</document>

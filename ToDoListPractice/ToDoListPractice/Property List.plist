@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ItemTitle</key>
+	<array>
+		<string>Coffee</string>
+		<string>Milk</string>
+		<string>Orange Juice</string>
+	</array>
+	<key>ItemDescription</key>
+	<array>
+		<string>To wake up for coding</string>
+		<string>Full of calcium</string>
+		<string>To stay hydrated</string>
+	</array>
+	<key>ItemImage</key>
+	<array>
+		<string>coffee</string>
+		<string>milk</string>
+		<string>orangeJuice</string>
+	</array>
+</dict>
+</plist>

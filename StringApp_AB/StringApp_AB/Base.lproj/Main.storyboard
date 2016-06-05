@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StringApp_AB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="palindrome" translatesAutoresizingMaskIntoConstraints="NO" id="dPf-O5-K1L">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VCf-cY-Zd3">
+                                <rect key="frame" x="118" y="74" width="365" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-6V-w1w">
+                                <rect key="frame" x="256" y="118" width="88" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <state key="normal" title="Submit input">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitInputButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaf-dw-FeP"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The program output goes here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JJh-qf-z88">
+                                <rect key="frame" x="16" y="156" width="568" height="429"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a string and I will tell you what it contains." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCU-i5-HU9">
+                                <rect key="frame" x="118" y="45" width="365" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Fd2-sv-is9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HYd-ZH-rHj">
+                                <rect key="frame" x="180" y="457" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="IJf-ee-b2o"/>
+                                    <constraint firstAttribute="width" constant="240" id="LTY-YZ-Mr4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dPf-O5-K1L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2Lq-iW-Gj5"/>
+                            <constraint firstItem="2BP-6V-w1w" firstAttribute="centerX" secondItem="VCf-cY-Zd3" secondAttribute="centerX" id="2P0-ct-geZ"/>
+                            <constraint firstItem="JJh-qf-z88" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="40C-x6-kOA"/>
+                            <constraint firstItem="dPf-O5-K1L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Dy-g5-iyn"/>
+                            <constraint firstItem="JJh-qf-z88" firstAttribute="top" secondItem="2BP-6V-w1w" secondAttribute="bottom" constant="8" symbolic="YES" id="ETN-mu-FdK"/>
+                            <constraint firstItem="aCU-i5-HU9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="Hr0-Xs-we0"/>
+                            <constraint firstItem="VCf-cY-Zd3" firstAttribute="trailing" secondItem="aCU-i5-HU9" secondAttribute="trailing" id="JbL-5Z-whn"/>
+                            <constraint firstAttribute="trailing" secondItem="dPf-O5-K1L" secondAttribute="trailing" id="Jcv-Rw-1XN"/>
+                            <constraint firstItem="dPf-O5-K1L" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="K3Q-LH-j1W"/>
+                            <constraint firstItem="aCU-i5-HU9" firstAttribute="centerX" secondItem="dPf-O5-K1L" secondAttribute="centerX" id="MVx-mu-P6p"/>
+                            <constraint firstItem="aCU-i5-HU9" firstAttribute="leading" secondItem="VCf-cY-Zd3" secondAttribute="leading" id="OIs-Nn-qUz"/>
+                            <constraint firstItem="HYd-ZH-rHj" firstAttribute="centerX" secondItem="JJh-qf-z88" secondAttribute="centerX" id="Ojr-L4-84u"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HYd-ZH-rHj" secondAttribute="bottom" constant="15" id="Q3E-HZ-u78"/>
+                            <constraint firstItem="VCf-cY-Zd3" firstAttribute="top" secondItem="aCU-i5-HU9" secondAttribute="bottom" constant="8" symbolic="YES" id="anG-gD-mO1"/>
+                            <constraint firstItem="2BP-6V-w1w" firstAttribute="centerX" secondItem="JJh-qf-z88" secondAttribute="centerX" id="dCL-6f-3ia"/>
+                            <constraint firstItem="HYd-ZH-rHj" firstAttribute="bottom" secondItem="JJh-qf-z88" secondAttribute="bottom" id="dDp-cw-ovC"/>
+                            <constraint firstItem="2BP-6V-w1w" firstAttribute="top" secondItem="VCf-cY-Zd3" secondAttribute="bottom" constant="14" id="j2C-Zc-wfv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="palindromePicture" destination="HYd-ZH-rHj" id="VCF-XS-21e"/>
+                        <outlet property="programOutput" destination="JJh-qf-z88" id="tp7-I1-Mcg"/>
+                        <outlet property="userInputField" destination="VCf-cY-Zd3" id="LW4-Zc-djX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="palindrome" width="322" height="330"/>
+    </resources>
+</document>
